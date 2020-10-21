@@ -1,0 +1,3 @@
+/mnt/d/PC/Cviceni5/bst/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/d/PC/Cviceni5/bst/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/d/PC/Cviceni5/bst/cmake-build-debug/CMakeFiles/bst.dir

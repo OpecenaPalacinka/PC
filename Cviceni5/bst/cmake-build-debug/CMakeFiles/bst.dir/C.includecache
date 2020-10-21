@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/PC/Cviceni5/bst/bst.c
+bst.h
+/mnt/d/PC/Cviceni5/bst/bst.h
+
+/mnt/d/PC/Cviceni5/bst/bst.h
+stdlib.h
+-
+stdio.h
+-
+
+/mnt/d/PC/Cviceni5/bst/tree.c
+stdio.h
+-
+stdlib.h
+-
+bst.h
+/mnt/d/PC/Cviceni5/bst/bst.h
+

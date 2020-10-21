@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/bst.dir/tree.c.o CMakeFiles/bst.dir/bst.c.o  -o bst 
