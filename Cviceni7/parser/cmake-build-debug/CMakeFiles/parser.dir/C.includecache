@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/PC/Cviceni7/parser/parser/operators.h
+stdlib.h
+-
+stdio.h
+-
+
+/mnt/d/PC/Cviceni7/parser/parser/parser.c
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+stack.h
+/mnt/d/PC/Cviceni7/parser/parser/stack.h
+operators.h
+/mnt/d/PC/Cviceni7/parser/parser/operators.h
+
+/mnt/d/PC/Cviceni7/parser/parser/stack.h
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+

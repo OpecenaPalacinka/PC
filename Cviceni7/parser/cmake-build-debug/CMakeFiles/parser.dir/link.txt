@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/parser.dir/parser/operators.o CMakeFiles/parser.dir/parser/parser.o CMakeFiles/parser.dir/parser/stack.o  -o parser 
