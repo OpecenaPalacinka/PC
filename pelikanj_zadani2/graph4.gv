@@ -1,0 +1,40 @@
+digraph G
+{
+  //nodes
+  s1[label=start];
+  s2;
+  s3;
+  s4[label=end];
+  s5[label=end];
+  s6;
+  s7;
+  s8;
+  s9;
+  //edges
+  s1->s2[label=a];
+  s1->s3[label=c];
+  s1->s2[label=b];
+  s3->s4[label=b];
+  s2->s4[label=d];
+  s3->s6[label=e];
+  s6->s5[label=e];
+  s2->s7[label=e];
+  s7->s7[label=q];
+  s6->s8[label=w];
+  s4->s7[label=e];
+  s7->s1[label=t];
+  s7->s9[label=z];
+}
+
+
+// Testovaci scenare
+// 1 )  adeqqq              //neuspech
+// 2 )  cew                 //N
+// 3 )  bd                  //Uspech
+// 4 )  aet                 //N
+// 5 )  cbeqqta             //N
+// 6 )  adetcb              //U
+// 7 )  tq                  //N
+// 8 )  ceweq               //N
+// 9 )  beqtaeqtcbeqqtcb    //U
+// 10)

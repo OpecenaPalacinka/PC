@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/PC/sudoku/sudoku.c
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+sudoku.h
+/mnt/d/PC/sudoku/sudoku.h
+
+/mnt/d/PC/sudoku/sudoku.h
+

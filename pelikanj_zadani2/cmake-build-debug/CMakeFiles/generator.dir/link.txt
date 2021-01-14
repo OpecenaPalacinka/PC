@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/generator.dir/fsmgen.c.o  -o generator 

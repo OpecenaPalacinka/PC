@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/cviceni9.dir/9_cviceni/9_cviceni/cracking/game.c.o  -o cviceni9 

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/PC/pelikanj_zadani2/fsmgen.h
+stdlib.h
+-
+stdio.h
+-
+
+/mnt/d/PC/pelikanj_zadani2/graph_gen_temp.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+fsmgen.h
+/mnt/d/PC/pelikanj_zadani2/fsmgen.h
+

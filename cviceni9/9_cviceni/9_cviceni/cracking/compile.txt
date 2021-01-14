@@ -1,0 +1,1 @@
+gcc game.c md5/md5.c md5/md5-crypt.c -o matches.exe -Imatches/include -Lmatches/build/x86 -lmatches -Wall -Wextra

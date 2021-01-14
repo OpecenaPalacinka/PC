@@ -1,0 +1,119 @@
+desc: (none)
+cmd: ./fsmgen.exe graph4.gv
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=128515
+mem_heap_B=4096
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=130112
+mem_heap_B=4568
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=130544
+mem_heap_B=5040
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=131137
+mem_heap_B=9136
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=132382
+mem_heap_B=13232
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=180665
+mem_heap_B=13232
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=peak
+n2: 13232 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 12288 0x48CEE83: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 12288 0x48DF04F: _IO_doallocbuf (genops.c:347)
+   n1: 8192 0x48DE0AF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 8192 0x48DC834: _IO_new_file_xsputn (fileops.c:1244)
+     n2: 8192 0x48DC834: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x48D0540: fwrite (iofwrite.c:39)
+       n0: 4096 0x109A45: main (in /mnt/d/PC/pelikanj_zadani2/fsmgen.exe)
+      n1: 4096 0x48D1677: puts (ioputs.c:40)
+       n1: 4096 0x1093BC: introInfo (in /mnt/d/PC/pelikanj_zadani2/fsmgen.exe)
+        n0: 4096 0x1099AC: main (in /mnt/d/PC/pelikanj_zadani2/fsmgen.exe)
+   n1: 4096 0x48DDE23: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x48DF105: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x48D09EB: _IO_getline_info (iogetline.c:60)
+      n1: 4096 0x48CF849: fgets (iofgets.c:53)
+       n0: 4096 0x109AEB: main (in /mnt/d/PC/pelikanj_zadani2/fsmgen.exe)
+ n1: 944 0x48CFAAD: __fopen_internal (iofopen.c:65)
+  n2: 944 0x48CFAAD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 472 0x1099C9: main (in /mnt/d/PC/pelikanj_zadani2/fsmgen.exe)
+   n0: 472 0x109A02: main (in /mnt/d/PC/pelikanj_zadani2/fsmgen.exe)
+#-----------
+snapshot=7
+#-----------
+time=180665
+mem_heap_B=9136
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=180798
+mem_heap_B=8664
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=181150
+mem_heap_B=4568
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=181283
+mem_heap_B=4096
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=184961
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

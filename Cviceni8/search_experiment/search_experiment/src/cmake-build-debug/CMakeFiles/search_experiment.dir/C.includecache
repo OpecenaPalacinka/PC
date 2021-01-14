@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/PC/Cviceni8/search_experiment/search_experiment/src/commodity.h
+
+/mnt/d/PC/Cviceni8/search_experiment/search_experiment/src/config.h
+
+/mnt/d/PC/Cviceni8/search_experiment/search_experiment/src/search_experiment.c
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+time.h
+-
+math.h
+-
+config.h
+/mnt/d/PC/Cviceni8/search_experiment/search_experiment/src/config.h
+commodity.h
+/mnt/d/PC/Cviceni8/search_experiment/search_experiment/src/commodity.h
+searchers/searchers.h
+/mnt/d/PC/Cviceni8/search_experiment/search_experiment/src/searchers/searchers.h
+
+/mnt/d/PC/Cviceni8/search_experiment/search_experiment/src/searchers/searchers.h
+stdlib.h
+-
+string.h
+-
+../commodity.h
+/mnt/d/PC/Cviceni8/search_experiment/search_experiment/src/commodity.h
+

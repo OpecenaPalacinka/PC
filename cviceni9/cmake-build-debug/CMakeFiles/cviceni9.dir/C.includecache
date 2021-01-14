@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/PC/cviceni9/9_cviceni/9_cviceni/cracking/game.c
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+mnt/d/PC/cviceni9/9_cviceni/9_cviceni/cracking/matches/include/matches/matches.h
+-
+md5/md5.h
+/mnt/d/PC/cviceni9/9_cviceni/9_cviceni/cracking/md5/md5.h
+
+/mnt/d/PC/cviceni9/9_cviceni/9_cviceni/cracking/md5/md5.h
+stdio.h
+-
+limits.h
+-
+stdint.h
+-
+

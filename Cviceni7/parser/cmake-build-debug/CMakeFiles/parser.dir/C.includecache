@@ -24,6 +24,10 @@ stack.h
 operators.h
 /mnt/d/PC/Cviceni7/parser/parser/operators.h
 
+/mnt/d/PC/Cviceni7/parser/parser/stack.c
+stack.h
+/mnt/d/PC/Cviceni7/parser/parser/stack.h
+
 /mnt/d/PC/Cviceni7/parser/parser/stack.h
 stdlib.h
 -

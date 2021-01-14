@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/pelikanj_zadani2.dir/fsmgen.c.o CMakeFiles/pelikanj_zadani2.dir/graph_gen_temp.c.o  -o pelikanj_zadani2 

@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/sudoku.dir/sudos.c.o CMakeFiles/sudoku.dir/sudoku.c.o  -o sudoku 

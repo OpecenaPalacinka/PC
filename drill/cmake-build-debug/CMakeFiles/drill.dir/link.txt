@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/drill.dir/main.c.o  -o drill 

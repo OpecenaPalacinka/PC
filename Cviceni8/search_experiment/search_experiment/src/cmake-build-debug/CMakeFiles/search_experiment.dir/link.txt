@@ -1,0 +1,1 @@
+/usr/bin/cc -Wall -Wextra -pedantic -ansi -g   CMakeFiles/search_experiment.dir/search_experiment.c.o CMakeFiles/search_experiment.dir/searchers/searchers.c.o  -o search_experiment  -lm 

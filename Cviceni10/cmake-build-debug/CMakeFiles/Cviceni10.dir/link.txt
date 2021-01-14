@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/Cviceni10.dir/src/loader.c.o CMakeFiles/Cviceni10.dir/src/person.c.o CMakeFiles/Cviceni10.dir/src/vector.c.o  -o Cviceni10 

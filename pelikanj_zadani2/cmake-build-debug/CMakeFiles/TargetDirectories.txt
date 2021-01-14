@@ -1,0 +1,5 @@
+/mnt/d/PC/pelikanj_zadani2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/d/PC/pelikanj_zadani2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/d/PC/pelikanj_zadani2/cmake-build-debug/CMakeFiles/pokus.dir
+/mnt/d/PC/pelikanj_zadani2/cmake-build-debug/CMakeFiles/fsm.dir
+/mnt/d/PC/pelikanj_zadani2/cmake-build-debug/CMakeFiles/generator.dir

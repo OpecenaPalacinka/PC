@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/PC/pelikanj_zadani2/fsm.c
+fsm_sprava.c
+/mnt/d/PC/pelikanj_zadani2/fsm_sprava.c
+fsm_pridani.c
+/mnt/d/PC/pelikanj_zadani2/fsm_pridani.c
+
+/mnt/d/PC/pelikanj_zadani2/fsm_pridani.c
+stdlib.h
+-
+string.h
+-
+
+/mnt/d/PC/pelikanj_zadani2/fsm_sprava.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+fsmgen.h
+/mnt/d/PC/pelikanj_zadani2/fsmgen.h
+
+/mnt/d/PC/pelikanj_zadani2/fsmgen.h
+
