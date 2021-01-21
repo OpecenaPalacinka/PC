@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/honza/Desktop/VS/PC/zkouska/fotbal.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+fotbal.h
+/Users/honza/Desktop/VS/PC/zkouska/fotbal.h
+
+/Users/honza/Desktop/VS/PC/zkouska/fotbal.h
+
