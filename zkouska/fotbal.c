@@ -1,154 +1,90 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
-#include "fotbal.h"
 
-#define MAX_INPUT_LENGTH 25
+#define LINE_SIZE 128
 
-void umazPismeno (char *str, char odstran) {
-    char *src, *dst;
 
-    for (src = dst = str; *src != '\0'; src++){
-        *dst = *src;
-        if (*dst != odstran) dst++;
-    }
-    *dst = '\0';
+int getSlovo(FILE *fp, char *line){
 
-}
+    char znak;
+    int index = 0;
 
-void kontrolaSlova (char *vstup,char *slovo){
-    unsigned long iterSlova,iterVstupu;
-    char *vstupik = vstup;
-    iterSlova = 0;
-    iterVstupu = 0;
-    while (42){
-        if (vstup[iterVstupu] == slovo[iterSlova]){
-            iterSlova++;
-            iterVstupu = 0;
-            if (iterSlova == strlen(slovo)){
-                printf("%s\n",slovo);
-                break;
-            }
-        } else {
-            iterVstupu++;
+    while(1){
+        znak = fgetc(fp);
+        if(znak == EOF){
+            line[index] = '\0';
+            return 0;
         }
-        if (iterVstupu > strlen(vstup)){
-            break;
+        if(znak == '\n'){
+            line[index] = '\0';
+            return 1;
         }
-
-    }
-}
-
-int load_word(slova **existujiciSlova,char *exactSlovo,char *vstup){
-    slova *slovo;
-    slova *slovoProIteraci = NULL;
-
-    if (!existujiciSlova || !exactSlovo) {
-        return 0;
-    }
-
-    slovo = (slova *) malloc(sizeof (slova));
-
-    if (!slovo) {
-        return 0;
-    }
-
-    strtok(exactSlovo,"\n");
-
-    slovo->slovo = exactSlovo;
-    slovo->dalsi_slovo = NULL;
-
-    if (*existujiciSlova){
-        slovoProIteraci = *existujiciSlova;
-        while (42) {
-            if (!slovoProIteraci->dalsi_slovo){
-                slovoProIteraci->dalsi_slovo = slovo;
-                break;
-            } else {
-                slovoProIteraci = slovoProIteraci->dalsi_slovo;
-            }
-        }
-    } else {
-        *existujiciSlova = slovo;
-    }
-
-    kontrolaSlova(vstup,exactSlovo);
-
-    return 1;
-}
-
-void uvolni(slova *slovaa){
-    /* Použitý pro uchování dalšího vrcholu */
-    slova *docasne = NULL;
-
-    if(!slovaa) {
-        return;
-    }
-
-    while(slovaa) {
-        docasne = slovaa->dalsi_slovo;
-        free(slovaa);
-        slovaa = docasne;
+        line[index] = znak;
+        index++;
     }
 }
 
 
-void kontrola(slova *seznamSlov,char *vstup){
-    unsigned long iterSlova,iterVstupu;
-
-    while (42) {
-        iterSlova = 0;
-        iterVstupu = 0;
-        while (42){
-            if (vstup[iterVstupu] == seznamSlov->slovo[iterSlova]){
-                iterVstupu = 0;
-                iterSlova++;
-                if (iterSlova == strlen(seznamSlov->slovo)){
-                    printf("%s",seznamSlov->slovo);
-                }
-            }
-            if (iterVstupu > strlen(vstup)+1){
-                seznamSlov = seznamSlov->dalsi_slovo;
-                break;
-            }
-            iterVstupu++;
-        }
-
-        if (!seznamSlov->dalsi_slovo){
-            break;
-        }
-    }
-}
-
-int main(int argc, char *argv[]) {
-    FILE *file;
-    slova *slova = NULL;
-    char buffer[MAX_INPUT_LENGTH];
+int main(int argc, char const *argv[])
+{
+    char line[LINE_SIZE] = {0};
+    FILE *fp = NULL;
+    int i, j;
+    unsigned long delka_nacteneho;
+    unsigned long delka_argv = strlen(argv[2]);
+    char aktualni_znak;
+    char *slovo = NULL;
+    int nalezeno = 0;
 
 
-    if (argc < 3){
-        printf("Use - slovnik.txt \'input chars\'");
-    }
-    if (argc > 3){
-        printf("Use - slovnik.txt \'input chars\'");
-    }
-
-    file = fopen(argv[1],"r");
-
-    if (!file) {
-        printf("Cannot open input file!");
+    if(argc != 3){
+        printf("Spatny pocet parametru\n");
         return EXIT_FAILURE;
     }
 
-    while (fgets(buffer,MAX_INPUT_LENGTH,file)){
-        load_word(&slova,buffer,argv[2]);
+    fp = fopen(argv[1],"r");
 
+    if(!fp){
+        printf("Soubor nelze otevrit\n");
+        return EXIT_FAILURE;
     }
 
-    /*kontrola(slova,vstup);*/
+    slovo = malloc(sizeof(char) * (delka_argv + 1));
 
-    uvolni(slova);
-    fclose(file);
-    return EXIT_SUCCESS;
+    if(!slovo){
+        printf("Fail with malloc\n");
+        return EXIT_FAILURE;
+    }
+
+    while(getSlovo(fp, line)){
+
+        strcpy(slovo, argv[2]);
+
+        delka_nacteneho  = strlen(line);
+
+        for(i = 0; i <= delka_nacteneho; i++){
+            nalezeno = 0;
+            aktualni_znak = line[i];
+
+            for(j = 0; j <= delka_argv; j++){
+                if(slovo[j] == aktualni_znak){
+                    nalezeno = 1;
+                    slovo[j] = 0;
+                    break;
+                }
+            }
+            if(nalezeno == 0){
+                break;
+            }
+        }
+
+        if(nalezeno == 1){
+            printf("%s\n", line);
+        }
+    }
+
+    free(slovo);
+    fclose(fp);
+    return 0;
 }
-

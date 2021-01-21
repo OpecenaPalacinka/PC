@@ -6,15 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/honza/Desktop/VS/PC/zkouska/fotbal.c
-stdio.h
--
+/Users/honza/Desktop/VS/PC/PC/zkouska/fotbal.c
 stdlib.h
+-
+stdio.h
 -
 string.h
 -
-fotbal.h
-/Users/honza/Desktop/VS/PC/zkouska/fotbal.h
-
-/Users/honza/Desktop/VS/PC/zkouska/fotbal.h
 

@@ -1,3 +1,3 @@
-/Users/honza/Desktop/VS/PC/zkouska/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/honza/Desktop/VS/PC/zkouska/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/honza/Desktop/VS/PC/zkouska/cmake-build-debug/CMakeFiles/zkouska.dir
+/Users/honza/Desktop/VS/PC/PC/zkouska/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/honza/Desktop/VS/PC/PC/zkouska/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/honza/Desktop/VS/PC/PC/zkouska/cmake-build-debug/CMakeFiles/zkouska.dir
